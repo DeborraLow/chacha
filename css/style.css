@@ -108,7 +108,7 @@ button:active{
     text-align: center;
 }
 .des {
-    padding: 20% 5% 5% 5%;
+    padding: 15% 5% 5% 5%;
     float: right;
     max-width: 90%;
     margin: 0 auto;
@@ -194,11 +194,18 @@ button:active{
         margin-top:15%;
     }
 }
-.fonedes .img, .ftwodes .img, .fthreedes .img {
+.fonedes .img, .ftwodes .img {
     padding-top: 13px;
-    max-width: 60%;
+    max-width: 57%;
     margin: 0 auto;
 }
+
+.fthreedes .img {
+        padding-top: 13px;
+    max-width: 72%;
+    margin: 0 auto;
+}
+
 h3 {
     font-family: 'peace_sansregular';
     font-size: 48px;
