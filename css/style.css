@@ -94,11 +94,10 @@ button:active{
     background-attachment: fixed;
 }
 
-@media (min-width:768px) {
+@media(max-width:768px){
 .header{
     width: 100%;
-    background-image: url('../images/topbg.jpg') no-repeat scroll center / cover;
-    background-size: cover;
+    background: url('../images/topbg_mini.jpg') no-repeat scroll center / cover;
     }
 }
 
@@ -108,7 +107,7 @@ button:active{
     text-align: center;
 }
 .des {
-    padding: 7%;
+    padding: 20% 5% 5% 5%;
     float: right;
     max-width: 90%;
     margin: 0 auto;
