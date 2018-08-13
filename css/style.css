@@ -61,12 +61,32 @@ html, body {
     margin: 0 auto;
     padding: 3%;
 }
+
+button{
+    cursor: pointer;
+    border: none;
+    color:#000;
+}
+
+button:hover{
+    color:#000;
+}
+
+button:visited{
+    color:#000;
+}
+
+button:active{
+    color:#000;
+}
+
 /*---------------------------- TOP ---------------------------------*/
 
 .logo {
     float: left;
     position: relative;
-    margin: 20px;
+    margin: 3%;
+    max-width: 40%;
 }
 .header {
     width: 100%;
@@ -97,9 +117,7 @@ html, body {
     height: 100px;
     margin: 5% 0 7% 0;
 }
-.topbutton:hover {
-    background: url('../images/topbutton_hover.svg') no-repeat;
-}
+
 .topbtn {
     max-width: 70%;
 }
@@ -164,11 +182,12 @@ html, body {
     .top, .fone, .ftwo {
         border-bottom: 2px solid #F8F8F8;
         padding-bottom: 8%;
+        margin-top:15%;
     }
 }
 .fonedes .img, .ftwodes .img, .fthreedes .img {
     padding-top: 13px;
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
 }
 h3 {
@@ -243,6 +262,7 @@ h3 {
     background-color: #FFCD00;
     width: 100%;
     padding: 10%;
+    margin-top:10%;
 }
 @media (max-width: 490px) {
     .download .col-md-5 .qr, .download .col-md-2, .scan {
@@ -284,24 +304,33 @@ h4 {
     /* background:url('../images/bottombutton_1.png') no-repeat; */
     width: 280px;
 }
+
 @media(min-width: 762px) {
     .btmbtn {
         margin-top: calc(50px - 5%);
     }
 }
+
+@media(max-width: 490px) {
+    .btmbtn {
+        margin-bottom:10%;
+}
+}
+
 /*
 .btmbtn:hover{
 	background:url('../images/bottombutton.png') no-repeat;
 }
 */
 
-@media (min-width: 768px) .btmbtn .col-md-5 {}
+
 .contact {
     width: 100%;
     background-color: #fff;
     text-align: center;
     padding: 1%;
 }
+
 h5 {
     font-family: "Hiragino Sans GB";
     font-size: 14px;
