@@ -123,7 +123,7 @@ button:active{
 }
 .topmobile img {
     float: right;
-    margin-top: -25%;
+    margin-top: -35%;
     padding: 0 5%;
 }
 .topmobiledes {
@@ -135,7 +135,7 @@ button:active{
 }
 .topmobiledes h2 {
     font-family: 'hiragino_sans_gbw6';
-    font-size: 32px;
+    font-size: 22px;
 }
 .topmobiledes .img {
     margin: 0 auto;
