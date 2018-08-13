@@ -93,6 +93,15 @@ button:active{
     background: url('../images/topbg.jpg') no-repeat scroll center / cover;
     background-attachment: fixed;
 }
+
+@media screen and (min-width:768px) {
+.header{
+    width: 100%;
+    background-image: url('../images/topbg.jpg') no-repeat scroll center / cover;
+    background-size: cover;
+    }
+}
+
 .top {
     display: flex;
     justify-content: center;
@@ -130,8 +139,8 @@ button:active{
     width: 577px;
 }
 .topmobiledes h1 {
-    font-size: 28px;
-    line-height: 100px;
+    font-size: 22px;
+    line-height: 60px;
 }
 .topmobiledes h2 {
     font-family: 'hiragino_sans_gbw6';
