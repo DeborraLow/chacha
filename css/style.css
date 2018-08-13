@@ -97,7 +97,8 @@ button:active{
 @media(max-width:768px){
 .header{
     width: 100%;
-    background: url('../images/topbg_mini.jpg') no-repeat scroll center / cover;
+    background-image: url('../images/topbg_mini.jpg') no-repeat scroll center / cover;
+    background-size: cover;
     }
 }
 
