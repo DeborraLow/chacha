@@ -1,0 +1,371 @@
+* {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    color: #333333;
+}
+input:focus, button:focus, a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #768ede;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {}
+h1 {
+    font-family: 'peace_sansregular';
+    text-transform: uppercase;
+    color: #FFCD00;
+    display: inline-block;
+}
+h2 {}
+h3 {}
+blockquote {
+    font-family: "Hiragino Sans GB";
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 7%;
+}
+p {
+    font-family: "Hiragino Sans GB";
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+    margin-top: 3%;
+}
+html, body {
+    height: 100%;
+    color: #000;
+}
+.container-fluid {
+    padding: 0;
+    height: 100%;
+}
+.row {
+    margin: 0;
+}
+.img {
+    display: block;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3%;
+}
+/*---------------------------- TOP ---------------------------------*/
+
+.logo {
+    float: left;
+    position: relative;
+    margin: 20px;
+}
+.header {
+    width: 100%;
+    background: url('../images/topbg.jpg') no-repeat scroll center / cover;
+    background-attachment: fixed;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.des {
+    padding: 7%;
+    float: right;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.slogan {
+    float: right;
+}
+.topbutton {
+    clear: both;
+    float: right;
+    max-width: 60%;
+    background: url('../images/topbutton.svg') no-repeat;
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 5% 0 7% 0;
+}
+.topbutton:hover {
+    background: url('../images/topbutton_hover.svg') no-repeat;
+}
+.topbtn {
+    max-width: 70%;
+}
+.topmobile img {
+    float: right;
+    margin-top: -25%;
+    padding: 0 5%;
+}
+.topmobiledes {
+    width: 577px;
+}
+.topmobiledes h1 {
+    font-size: 28px;
+    line-height: 100px;
+}
+.topmobiledes h2 {
+    font-family: 'hiragino_sans_gbw6';
+    font-size: 32px;
+}
+.topmobiledes .img {
+    margin: 0 auto;
+}
+.symbol {
+    max-width: 20%;
+    display: inline-block;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+.symbolrev {
+    max-width: 20%;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    display: inline-block;
+    margin-left: 10px;
+}
+/*---------------- Feature ----------------*/
+
+.fone, .ftwo, .fthree {
+    margin-top: 10%;
+}
+.fone {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.ftwo {
+    display: flex;
+}
+.fthree {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.f-img {
+    width: 550px;
+}
+.fonedes, .ftwodes, .fthreedes {
+    text-align: center;
+    padding: calc(5% + 10px) 5% 0 5%;
+    margin: 0 auto;
+    width: 420px;
+}
+@media(max-width:1032px) {
+    .top, .fone, .ftwo {
+        border-bottom: 2px solid #F8F8F8;
+        padding-bottom: 8%;
+    }
+}
+.fonedes .img, .ftwodes .img, .fthreedes .img {
+    padding-top: 13px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+h3 {
+    font-family: 'peace_sansregular';
+    font-size: 48px;
+    color: #FFCD00;
+    transform: scaleY(1.3);
+    margin-top: -20px;
+    padding-left: 3px;
+    display: block;
+}
+.fonedes h1, .ftwodes h1, .fthreedes h1 {
+    font-size: 20px;
+    line-height: 50px;
+}
+.fonedes p {}
+.fonedes h2, .ftwodes h2, .fthreedes h2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.star {
+    background: url('../images/star.svg') no-repeat;
+    width: 100px;
+    height: 30px;
+    display: block;
+    padding-left: 3%;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+.arrow {
+    float: right;
+    position: relative;
+    margin-top: calc(50% - 30px);
+    margin-bottom: -5%;
+}
+.arrowrev {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    float: left;
+    position: relative;
+    top: 70px;
+}
+@media (max-width: 1031px) {
+    .arrow, .arrowrev {
+        display: none;
+    }
+}
+.parallax-wrap {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallaxing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallaxing.one {
+    z-index: 10;
+    transform: translateZ(-100px);
+}
+.parallaxing.two {
+    margin-top: 95vh;
+    z-index: 20;
+    transform: translateZ(-200px);
+    scale(3)
+}
+.download {
+    background-color: #FFCD00;
+    width: 100%;
+    padding: 10%;
+}
+@media (max-width: 490px) {
+    .download .col-md-5 .qr, .download .col-md-2, .scan {
+        display: none;
+    }
+}
+.download .content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+h4 {
+    font-family: 'din-blackitalicregular';
+    font-size: 24px;
+    color: #000;
+    display: block;
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+.qr {
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.scan {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scan h1 {
+    font-size: 16px;
+    font-family: "Hiragino Sans GB";
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+}
+.btmbtn {
+    margin: 0 auto;
+    /* background:url('../images/bottombutton_1.png') no-repeat; */
+    width: 280px;
+}
+@media(min-width: 762px) {
+    .btmbtn {
+        margin-top: calc(50px - 5%);
+    }
+}
+/*
+.btmbtn:hover{
+	background:url('../images/bottombutton.png') no-repeat;
+}
+*/
+
+@media (min-width: 768px) .btmbtn .col-md-5 {}
+.contact {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 1%;
+}
+h5 {
+    font-family: "Hiragino Sans GB";
+    font-size: 14px;
+    color: #000;
+    display: inline-block;
+    font-weight: 800;
+}
+h6 {
+    font-family: "Arial";
+    font-size: 10px;
+    color: #000;
+    text-align: right;
+    display: block;
+    margin-top: -20px;
+    font-style: italic;
+}
+@media(max-width: 640px) {
+    .developed {
+        display: none;
+    }
+}
+.modal-header {
+    border: none;
+}
+.modal-body {
+    text-align: center;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15% 0 23% 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.modal-body h1 {
+    font-family: "Hiragino Sans GB";
+    font-size: calc(18px + ((4 * (100vw - 800px)) / 799));
+    color: #000;
+    display: block;
+    width: 100%;
+    font-weight: bolder;
+}
+.modal-body h2 {
+    font-family: 'futura_lt_btlight';
+    font-size: calc(18px + ((2 * (100vw - 800px)) / 799));
+    color: #000;
+    display: block;
+    width: 100%;
+    word-break: break-all;
+    padding: 5%;
+}
+.modal-content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.modal-dialog-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2));
+}
